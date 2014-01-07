@@ -1,0 +1,21 @@
+<%- form_for(@email) do |f| %>
+  <div class="field">
+    <%= f.label :to %><br>
+    <%= f.text_field :to >
+  </div>
+  <div class="field">
+    <%= f.label :from %><br>
+    <%= f.text_field :from %>
+  </div>
+  <div class="field">
+    <%= f.label :subcejt %><br>
+    <%= t.text_field :subcejt %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%- f.submit %>
+  </div>
+<% end %>

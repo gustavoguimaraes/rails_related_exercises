@@ -1,0 +1,10 @@
+<ul>
+<% @tweets.each do |t| %>
+	<li><%= t.body %> </li> <!-- like ruby object and calling attribute dog and dog.name -->
+  <p>
+    <%= button_to "Delete", t, :method => :delete, :data => { :confirm => "Are you sure?"} %></p>
+<% end %>
+
+</ul>
+
+

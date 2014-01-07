@@ -1,0 +1,18 @@
+%p id="notice" 
+  = notice
+
+%p
+  %b To:
+  = @email.to
+
+%p
+  %b Subject:
+  = @email.subject
+
+%p>
+  %b Body:
+  = @email.body
+
+
+= link_to "Edit", edit_email_path(@post) |
+= link_to "Back", emails_path
