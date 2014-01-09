@@ -1,0 +1,13 @@
+<h1>Consoles</h1>
+
+<ul>
+<% @consoles.each do |t| %>
+  <li><%=t.console_name%></li>
+  
+  <p><%= link_to('Edit', "consoles/#{t.id}/edit")%></p>
+  <p>
+    <%= button_to "Delete", t, :method => :delete, :data => { :confirm => "Are you sure"} %>
+  </p>
+  <%end%>
+</ul>
+

@@ -1,0 +1,12 @@
+<%= form_for(@console) do |f| %>
+ <div class="field">
+    <%=f.label "Console Name"%>
+    <br> 
+    <%=f.text_field :console_name %>
+  </div>
+
+  <div class="actions">
+    <%=f.submit%>
+  </div>
+
+<%end%> 

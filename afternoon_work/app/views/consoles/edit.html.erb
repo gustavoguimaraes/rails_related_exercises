@@ -1,0 +1,17 @@
+<h1>Editing User</h1>
+
+<%= form_for(@console) do |f| %>
+ <div class="field">
+    <%=f.label "Console Name"%>
+    <br> 
+    <%=f.text_field :console_name %>
+  </div>
+
+  <div class="actions">
+    <%=f.submit%>
+  </div>
+
+<%end%> 
+
+<%=link_to "Show", @console %>
+<%=link_to "Back", games_path%>
