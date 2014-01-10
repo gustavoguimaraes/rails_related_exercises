@@ -10,11 +10,14 @@ class ConsolesController <ApplicationController
 
   def new
     @console = Console.new
+    @console.game_id = :game_id
   end
 
   def create
+    debugger
     @console = Console.new(params[:console])
-      @console.game_id = :id
+      current_game = :game_id
+      @console.game_id = current_game
     if @console.save
       redirect_to @console
     else

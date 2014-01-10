@@ -3,6 +3,7 @@
     <%=f.label "Console Name"%>
     <br> 
     <%=f.text_field :console_name %>
+    <%=f.hidden_field :game_id, :value => params[:id] %>
   </div>
 
   <div class="actions">
